@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      font-size: small;
+      color: rgba(0,0,0,.87);
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      width: 100vw;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+    .logo-wrapper {
+      height: 200px;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    #logo {
+      width: 272px;
+    }
+    #search {
+      border: none;
+      color: rgba(0,0,0,.87);
+      word-wrap: break-word;
+      outline: none;
+      font: 16px arial, sans-serif;
+      line-height: 34px;
+      height: 38px;
+
+      border: 1px solid #dfe1e5;
+      border-radius: 20px;
+      width: 475px;
+
+      padding: 5px 8px 0 16px;
+
+      margin-top: -25px;
+    }
+    #search:hover,
+    #search:focus,
+    #search:active {
+      box-shadow: 0 1px 6px rgba(32,33,36,.28);
+      border-color: rgba(223,225,229,0);
+    }
+
+    #navbar-top {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      margin-left: -10px;
+    }
+    #navbar-top .left,
+    #navbar-top .right {
+      list-style: none;
+      display: flex;
+    }
+    #navbar-top .left li,
+    #navbar-top .right li {
+      padding-right: 15px;
+    }
+  </style>
+</head>
+<body>
+  <nav id="navbar-top">
+    <ul class="left">
+      <li>About</li>
+      <li>Store</li>
+    </ul>
+    <ul class="right">
+      <li>Gmail</li>
+      <li>Images</li>
+    </ul>
+  </nav>
+  <div class="content">
+    <div class="logo-wrapper">
+      <img id="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo">
+    </div>
+    <input type="text" name="search" id="search" autocomplete="off">
+  </div>
+  <div id="footer">
+    
+  </div>
+</body>
+</html>
